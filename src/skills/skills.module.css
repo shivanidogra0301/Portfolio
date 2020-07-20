@@ -1,0 +1,25 @@
+.skills{
+    background-color: #4a4e69;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding:2rem 2.5rem;
+    margin:3rem;
+    font-weight: 600;
+
+
+}
+
+.header{
+    align-self: center;
+    padding: 2rem;
+    margin:1rem;
+    font-size: 3rem;
+    color:#fff;
+}
+
+.skill_content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(20rem,1fr));
+}

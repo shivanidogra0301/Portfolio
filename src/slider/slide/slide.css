@@ -1,0 +1,46 @@
+.slide{
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left:0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 8;
+}
+
+.overlay{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.active{
+    opacity: 1;
+}
+
+.right__arrow{
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff;
+    position: absolute;
+    top:40%;
+    right:25px;
+    z-index: 20;
+}
+
+.left__arrow{
+    border-style: solid;
+    border-width: 10px 20px 10px 0;
+    border-color: transparent #fff transparent transparent;
+    position: absolute;
+    top:40%;
+    left:25px;
+    z-index: 20;
+
+}

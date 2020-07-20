@@ -1,0 +1,17 @@
+.footer{
+    height:5rem;
+    background-color: #22223B;
+    color:#fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.icon{
+    height: 2rem;
+    fill:#fff;
+    margin:0 1rem;
+    transition: fill 0.5s linear;
+}
