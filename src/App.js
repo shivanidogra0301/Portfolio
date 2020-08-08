@@ -21,16 +21,26 @@ function App() {
 
   const scrollIntoView = (content)=>{
     switch(content){
-       case('About Me'):profileRef.current.scrollIntoView({behavior:'smooth'})
+       case('About Me'):
+       let profileTop = profileRef.current.offsetTop - 100
+       window.scrollTo({behavior:'smooth' , top:profileTop})
        break;
 
-       case('Skills'):SkillRef.current.scrollIntoView({behavior:'smooth'})
+       case('Skills'):
+       let skillTop = SkillRef.current.offsetTop-100;
+       window.scrollTo({behavior:'smooth' ,top:skillTop})
        break;
 
-       case('Projects'):projectsRef.current.scrollIntoView({behavior:'smooth'})
+       case('Projects'):
+       let projectsTop = projectsRef.current.offsetTop - 105
+       window.scrollTo({behavior:'smooth' ,top:projectsTop})
+
+       
         break;
 
-      case('Contact Me'):contactRef.current.scrollIntoView({behavior:'smooth'})
+      case('Contact Me'):
+        let contacTop = contactRef.current.offsetTop;
+        contactRef.current.scrollIntoView({behavior:'smooth' , block:'end'})
         break;
 
       default:return
