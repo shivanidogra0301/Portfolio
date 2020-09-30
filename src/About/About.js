@@ -7,8 +7,8 @@ const About = (props) => {
 
     useEffect(()=>{
         AOS.init({
-            delay:1000,
-            duration:2000,
+            delay:600,
+            duration:1000,
             once:false,
             easing:'ease-out'
         })
@@ -26,7 +26,7 @@ const About = (props) => {
                 </div>
 
                 <div className={classes.bio}>
-                A second year undergraduate in Information Technology who has keen interest in web design, development ,data structure and data science.Currently I am improving my skillset and learning new technologies.I am a fitness enthusiast and in my spare time I also love to play video games .
+                A second year undergraduate in Information Technology who has a keen interest in Web Design, Development, Data Structures and Data Science. Currently, I am improving my skillset and learning new technologies. I am a fitness enthusiast and in my spare time I also love to play video games .
                 </div>
 
                 <div data-aos="zoom-out-down" className={classes.icons}>

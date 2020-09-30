@@ -8,6 +8,7 @@ import skill7 from './images/keras.png';
 import skill8 from './images/react.png';
 import skill9 from './images/vuejs.png';
 
+
 export default [
 	{ img: skill1, name: 'C++' },
 	{ img: skill2, name: 'Java' },

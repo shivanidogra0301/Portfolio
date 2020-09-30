@@ -13,5 +13,9 @@
     height: 2rem;
     fill:#fff;
     margin:0 1rem;
-    transition: fill 0.5s linear;
+    transition: fill 0.3s ease-out;
+}
+
+.icon:hover{
+    fill:#c9ada7;
 }

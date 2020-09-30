@@ -1,6 +1,6 @@
 .about{
     background-color: #9B9FB5;
-    margin:2rem 0;
+    margin:2rem auto;
     display: grid;
     grid-template-columns: 20% minmax(min-content,50rem);
     grid-column-gap: 5rem;
@@ -8,7 +8,7 @@
     grid-template-rows: min-content;
     grid-auto-rows: min-content;
     padding:5rem;
-    height: 50rem;
+    height: 40rem;
 }
 
 .img{
