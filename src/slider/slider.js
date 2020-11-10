@@ -93,7 +93,6 @@ const Slider = () => {
             <div className={classes.type} id="typed"/>
             <div className={classes.slide}>
             <div className={classes.dot}></div>
-            <div className={classes.slide_text}>Slide Down</div>
         </div>
 
         </div>

@@ -10,7 +10,9 @@
     position: absolute;
     color:#fff;
     top:42%;
-    left:42%;
+    left:50%;
+    width: 280px;
+    transform: translateX(-50%);
     padding:0.5rem;
     margin: 1rem;
     font-size: 2rem;
@@ -22,7 +24,8 @@
     text-align: center;
     margin-bottom: 20rem;
     z-index: 20;
-    left:40%;
+    left:50%;
+    transform:translateX(-50%);
     top:35%;
     text-transform: uppercase;
     color:#fff;
@@ -38,11 +41,11 @@
     width:3rem;
     height: 6rem;
     color:#fff;
-    margin: 2rem;
     border-radius: 30%;
     position: relative;
     z-index: 20;
-    left:46%;
+    left:50%;
+    transform:translateX(-50%);
     top:65%;
 }
 
@@ -83,33 +86,16 @@
     }
 }
 
-@media screen and (max-width:600px){
-    .title{
-        left:20%;
-    }
+
+
+@media screen and (max-width:500px){
 
     .type{
-        left:32%;
+        top: 45%;
     }
+
+ 
 }
 
-@media screen and (max-width:450px){
-
-    .title{
-        left:12%;
-    }
-
-    .type{
-        left:30%
-    }
-}
-
-@media screen and (max-width:360px){
-
-
-    .type{
-        top:47%
-    }
-}
 
 

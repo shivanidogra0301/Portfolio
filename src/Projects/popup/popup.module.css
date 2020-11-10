@@ -21,13 +21,14 @@
     top:50%;
     left:50%;
     transform: translate(-50% , -50%);
-    width: 60%;
+    width: 70%;
+    /* height: 100%; */
     box-shadow:  0 2rem 4rem rgba(0,0,0,0.2);
     border-radius: 4px;
 }
 
 .popup__image{
-    height: 50vh;
+    height: 70vh;
     width:100%;
 }
 
@@ -61,7 +62,17 @@
     }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
+    .popup__content{
+        width: 85%;
+    }
+
+    .popup__image{
+        height: 65vh;
+    }
+}
+
+@media screen and (max-width:800px){
 
     .popup{
         display: none;

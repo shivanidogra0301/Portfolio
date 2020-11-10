@@ -18,6 +18,7 @@ import search3 from "./images/search3.png"
 import redsapp1 from "./images/redsapp1.png"
 import redsapp2 from "./images/redsapp2.png"
 import redsapp3 from "./images/redsapp3.png"
+import redsapp4 from "./images/redsapp4.png"
 
 import caption1 from "./images/caption1.png"
 import caption2 from "./images/caption2.png"
@@ -27,12 +28,26 @@ import tonny1 from "./images/tonny1.PNG"
 import tonny2 from "./images/tonny2.PNG"
 import tonny3 from "./images/tonny3.PNG"
 
+import whatsApp1 from "./images/whatsapp1.png"
+import whatsApp2 from "./images/whatsapp2.png"
+import whatsApp3 from "./images/whatsapp3.png"
+import whatsApp4 from "./images/whatsapp4.png"
+import whatsApp5 from "./images/whatsapp5.png"
+
+
 
 
 
 
 
 export default [
+	{
+		title:"Whatsapp-Clone",
+		image:whatsApp2,
+		desc:
+			'This project is the clone of whatsappweb which is made using react and redux for the frontend , nodejs for the backend. All the realtime communication is made using socket.io. The project is deployed on netlify. ',
+		slides:[whatsApp1 , whatsApp2 , whatsApp3 , whatsApp4 , whatsApp5]
+	},
 	{
 		title: 'Estore',
 		image: Img1,
@@ -50,8 +65,8 @@ export default [
 	{
 		title: 'Redsapp',
 		image: Img3,
-		desc:	'It is a fully functional twitter clone made using ReactJs as the frontend and firebase cloud functions as the backend. You can like,comment,update ,delete tweets and receive real time notifications.User can also update his profile just like a typical social media platform',
-		slides:[redsapp1,redsapp2,redsapp3]
+		desc:	'It is a fully functional twitter clone made using ReactJs as the frontend and firebase cloud functions as the backend. You can like,comment,update ,delete tweets and receive real time notifications.User can also update his profile just like a typical social media platform ',
+		slides:[redsapp1,redsapp4,redsapp2 ,redsapp3]
 	},
 	{
 		title: 'Caption-Bot',
