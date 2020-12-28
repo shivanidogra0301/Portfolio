@@ -7,8 +7,8 @@ const About = (props) => {
 
     useEffect(()=>{
         AOS.init({
-            delay:600,
-            duration:1000,
+            delay:200,
+            duration:600,
             once:false,
             easing:'ease-out'
         })
@@ -19,10 +19,14 @@ const About = (props) => {
         <div ref={props.refs} className={classes.about}>
             <div data-aos="fade-top" className={classes.image} >
                 <img alt="" className={classes.img}  src={require("../images/profile.PNG")}/>
+                <div className={classes.img_back}>
+
+                </div>
             </div>
             <div data-aos="fade-left" className={classes.content}>
                 <div className={classes.content__header}>
-                    Shubham Dogra
+                <span style={{color:"#ededed" , fontWeight:"200"}}>About</span>
+                <span style={{color:"#ededed", fontWeight:"700"}}> Me</span>
                 </div>
 
                 <div className={classes.bio}>

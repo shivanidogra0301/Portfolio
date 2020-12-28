@@ -3,66 +3,49 @@ import classes from './navbar.module.css';
 
 const Navbar = ({ scroll }) => {
 	
+	useEffect(() =>{
+		window.addEventListener('resize',()=>{
+		const as = document.querySelectorAll(".link");
+		if(idx != null){
+		let x = as[idx];
+		markerRef.current.style.left = x.offsetLeft + "px";
+		markerRef.current.style.width = x.offsetWidth + "px";
+		}})
+	})
+
 	const [ links ] = useState([ 'About Me', 'Skills', 'Projects', 'Contact Me' ]);
-	const [ current, setCurrent ] = useState(0);
+	const [idx , setIndex] = useState(null);
 
 	let navbar_links = links.map((name, index) => (
-		<li key={index} onClick={() => clickLink(index,name)}
-		className={classes.link +" "+(current===index ? classes.link_active:null)}>
+		<li  key={index} onClick={(e) => clickLink(index , name , e)}
+		className={classes.link + " " + "link" + " " + (idx === index ? classes.link_active : null)}>
 			{name}
 		</li>
 	));
 
 	const navRef = useRef();
+	const markerRef = useRef();
 
-
-
-	
-
-	const clickLink = (index,name)=>{
-		setCurrent(index)
+	const clickLink = (index ,name , e)=>{
 		scroll(name)
+		indicator(e.target);
+		setIndex(index);
 	}
 
-	useEffect(()=>{
+	const indicator = e => {
+		markerRef.current.style.left = e.offsetLeft + "px";
+		markerRef.current.style.width = e.offsetWidth + "px";
 
-		setInterval(()=>{
 
-			if(window.scrollY > 550){
-				navRef.current.style.position = 'fixed';
-				navRef.current.style.top = '0';
-				navRef.current.style.margin = '0 0';
-
-			}
-			
-			else{
-				navRef.current.style.position = 'relative'
-				navRef.current.style.top = '0'
-			
-
-			}
-			
-		},500)
-		
-
-	
-
-	})
-
-	
-	return (
-		
+	}
+	return (	
 		<Fragment>
-			
-
-
 			<div ref={navRef} className={classes.navbar}>
-
-				<div className={classes.navbar__links}>{navbar_links}</div>
-			</div>
-
-			
-			
+				<div className={classes.navbar__links}>
+					<div ref = {markerRef} className={classes.marker}></div>
+					{navbar_links}
+					</div>
+			</div>			
 		</Fragment>
 	);
 };

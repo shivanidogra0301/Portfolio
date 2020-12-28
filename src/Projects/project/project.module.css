@@ -16,17 +16,12 @@
                 width 0.3s ease;
 }
 
-
-
-
 .image{
     height: 70%;
     position: relative;
     overflow: hidden;
     padding-bottom: 5rem;
 }
-
-
 
 .image:hover img{
     height: 100%;
@@ -42,11 +37,10 @@
     position: absolute;
     font-weight: bold;
     font-size: 1.5rem;
-    color:#22223b;
     top:82%;
     padding:1rem;
-    background-color: #f2e9e4;
-    color: #22223b;
+    background-color: #98999A;
+    color: #000;
     left:10%;
     width: 80%;
     border-radius: 4px;
@@ -55,11 +49,12 @@
 }
 
 .project__desc{
-    
     line-height: 2.3rem;
     font-size: 1.5rem;
-    color: #4a4e69;
-
+    color: #dadbe3;
+}
+.project__desc:hover{
+    color:#fff;
 }
 
 

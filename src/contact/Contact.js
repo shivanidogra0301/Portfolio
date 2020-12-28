@@ -6,8 +6,7 @@ export class Contact extends Component {
 
     componentDidMount(){
         AOS.init({
-            delay:200,
-            duration:1000,
+            duration:200,
             once:false,
             easing:'ease-in'
         })
@@ -19,10 +18,13 @@ export class Contact extends Component {
     render() {
         return (
             <div ref={this.props.refs}  className={classes.contact}>
-                <div data-aos="fade-top" style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
-                    <div className={classes.title}>Like what you see?</div>
+                <div  style={{display:'flex',flexDirection:'column',alignItems:'center'}}>
+                    <div className={classes.title}>
+                        <span style={{color:"#ededed" , fontWeight:"200"}}>Like</span>
+                        <span style={{color:"#ededed", fontWeight:"700"}}>  what you see?</span>
+                    </div>
                     <div className={classes.message}>I'd love to hear from you</div>
-                    <a id="an" className={classes.btn} href='mailTo:shubhamdogra076@gmail.com'>Get In Touch
+                    <a data-aos="fade-top" id="an" className={classes.btn} href='mailTo:shubhamdogra076@gmail.com'>Get In Touch
                     <span></span>
                     </a>
                 </div>

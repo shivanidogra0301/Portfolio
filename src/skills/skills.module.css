@@ -1,5 +1,5 @@
 .skills{
-    background-color: #4a4e69;
+    background-color: #454043;
     width: 100%;
     min-height: 50vh;
     display: flex;
@@ -15,7 +15,7 @@
     align-self: center;
     padding: 2rem;
     margin:1rem;
-    font-size: 3rem;
+    font-size: 3.5rem;
     color:#fff;
 }
 

@@ -4,7 +4,6 @@ import Img3 from './images/redsapp2.png';
 import Img4 from "./images/caption1.png"
 import Img5 from "./images/one.jpg"
 
-
 import ecommerce1 from "./images/Ecommerce1.png"
 import ecommerce2 from "./images/Ecommerce2.png"
 import ecommerce3 from "./images/Ecommerce3.png"
@@ -34,12 +33,6 @@ import whatsApp3 from "./images/whatsapp3.png"
 import whatsApp4 from "./images/whatsapp4.png"
 import whatsApp5 from "./images/whatsapp5.png"
 
-
-
-
-
-
-
 export default [
 	{
 		title:"Whatsapp-Clone",
@@ -56,7 +49,7 @@ export default [
         slides:[ecommerce1,ecommerce2,ecommerce3,ecommerce4,ecommerce5]
 	},
 	{
-		title: 'Image based Serach Engine',
+		title: 'Image based Search Engine',
 		image: Img2,
 		desc:
             'It is an image based Search-Engine made using python,keras and tensorflow.It predicts the top 10 results with highest probabilities with the query image',

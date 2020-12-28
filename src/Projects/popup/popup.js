@@ -1,20 +1,30 @@
 import React from 'react'
-import classes from "./popup.module.css"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Navigation, Pagination} from 'swiper';
+import "swiper/swiper-bundle.css"
+import "./popup.css"
+
 const Popup = (props) => {
 
-    let images = props.slides?props.slides.map((img,index)=>(
-        <img onClick={()=>props.click(img)} src={img} alt="" key={index}/>
+    let images = props.slides ? props.slides.map((img,index)=>(
+        <SwiperSlide  key={index}>
+            <img  src={img} alt=""/>
+        </SwiperSlide>
     )):null
+    SwiperCore.use([Navigation , Pagination])
     return (
         <>
-        <div onClick={props.close} className={classes.popup +" "+(props.show ?classes.popup_show:null)}></div>
-        <div className={classes.popup__content}>
-        <div className={classes.popup__image}>
-            <img  className ={classes.img} src={props.url} alt=" " />
-        </div>
-        {props.slides ?<div className={classes.slides}>
+        <div onClick={props.close} className={"popup" +" "+(props.show ?"popup_show":null)}></div>
+        <div className="popup__content">
+
+        {props.slides ?<Swiper id = "main"
+        slidesPerView={1}
+        effect="fade"
+        pagination= {{clickable:true}}
+        navigation
+        >
             {images}
-        </div>:null}
+        </Swiper>:null}
     </div>
     </>
     )

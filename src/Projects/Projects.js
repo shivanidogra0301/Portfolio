@@ -7,25 +7,20 @@ import Popup from './popup/popup';
 export class Projects extends Component {
 	state = {
 		showPopup: false,
-		url: '',
 		current: 0
 	};
 
-	clickProjectHandler = (image, index) => {
-		this.setState({ url: image, showPopup: true, current: index });
+	clickProjectHandler = (index) => {
+		this.setState({showPopup: true, current: index });
 	};
 
 	closePopuphandler = () => {
 		this.setState({ showPopup: false, current: 0 });
 	};
 
-	clickSlideHandler = (image) => {
-		this.setState({ url: image });
-	};
-
 	render() {
 		let projects = images.map((data, index) => (
-			<Project click={() => this.clickProjectHandler(data.image, index)} key={index} {...data} />
+			<Project click={() => this.clickProjectHandler(index)} key={index} {...data} />
 		));
 
 		return (
@@ -35,12 +30,14 @@ export class Projects extends Component {
 						slides={images[this.state.current].slides}
 						show={this.state.showPopup}
                         close={this.closePopuphandler}
-                        click={this.clickSlideHandler}
-						url={this.state.url}
 					/>
 				) : null}
 
-				<div className={classes.projects__header}>My Projects</div>
+				<div className={classes.projects__header}>
+					<span style={{color:"#ededed" , fontWeight:"200"}}>My </span>
+					<span style={{width:"1rem"}}></span>
+                	<span style={{color:"#ededed", fontWeight:"700"}}> Projects</span>
+				</div>
 
 				<div className={classes.projects__data}>{projects}</div>
 			</div>

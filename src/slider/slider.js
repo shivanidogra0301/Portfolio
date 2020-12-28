@@ -6,77 +6,57 @@ import Img3 from "../images/three.jpg";
 import Img2 from "../images/two.jpg";
 import Typed from "typed.js"
 
-
 const Slider = () => {
 
-    
-    const type = useRef()
-   
+    const type = useRef()  
 
-    useEffect(()=>{
-
-    const strings = [
-            'Software Developer',
-            'Full Stack Web Developer',
-            'UX/UI Designer',
-            'Deep Learning Enthusiast'
-    
-        ]
-    
-    
-    const options = {
-            strings:strings,
-            typeSpeed:50,
-            backSpeed:60,
-            loop:true,
-            delay:1000
-        }
-
-    const el = document.querySelector("#typed")
-    
-    
-    const typed = new Typed(el,options)
-
-
-    },[])
 
     const images = [Img1,Img2,Img3]
+    const [current,setCurrent] = useState(0)
 
-      const [current,setCurrent] = useState(0)
-
-      const next = ()=>{
-        
+      const next = ()=>{        
           if((current) === images.length-1){
                 setCurrent(0)
-          }
-
-          else{
+          } else {
               setCurrent(current+1)
 
           }
 
       }
 
-      const prev = ()=>{
+      useEffect(()=>{
+        const strings = [
+                'Software Developer',
+                'Full Stack Web Developer',
+                'UX/UI Designer',
+                'Deep Learning Enthusiast'
+            ]
+                   
+        const options = {
+                strings:strings,
+                typeSpeed:50,
+                backSpeed:60,
+                loop:true,
+                delay:1000
+            }
+    
+        const el = document.querySelector("#typed")  
+        const typed = new Typed(el,options)
+        },[])
 
+      const prev = ()=>{
         if(current === 0){
-            
             setCurrent(images.length-1)
         }
-
         else
         {
             setCurrent(current-1);
         }
-        
-      }
+        }
 
-      useEffect(() => {
-            
+      useEffect(() => {    
         setTimeout(()=>{
             next()
-
-
         },3000)
 
       }, [current])

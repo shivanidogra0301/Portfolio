@@ -6,8 +6,7 @@ import Contact from "./contact/Contact"
 import Footer from "./footer/footer"
 import Projects from "./Projects/Projects"
 import Skills from "./skills/skills"
-
-
+import Header from "./header/header"
 
 function App() {
 
@@ -15,9 +14,6 @@ function App() {
   let contactRef = useRef();
   let SkillRef = useRef();
   let projectsRef = useRef();
-
-
-
 
   const scrollIntoView = (content)=>{
     switch(content){
@@ -33,9 +29,7 @@ function App() {
 
        case('Projects'):
        let projectsTop = projectsRef.current.offsetTop - 105
-       window.scrollTo({behavior:'smooth' ,top:projectsTop})
-
-       
+       window.scrollTo({behavior:'smooth' ,top:projectsTop}) 
         break;
 
       case('Contact Me'):
@@ -47,12 +41,11 @@ function App() {
 
     }
   }
-
-
   return (
-    <div style={{backgroundColor:"#F2E9E4"}}>
-      <Slider/>
+    <div style={{backgroundColor:"#1F1B14"}}>
       <Navbar scroll={scrollIntoView} />
+      {/* <Slider/> */}
+      <Header/>
       <About refs={profileRef}/>
       <Skills refs={SkillRef}/>
       <Projects refs={projectsRef}/>

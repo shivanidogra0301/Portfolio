@@ -32,7 +32,7 @@ class Project extends Component {
 				<div className={classes.project__desc}>
 					{this.props.desc}
 
-					{this.props.title === 'Whatsapp-Clone' ? (
+					{/* {this.props.title === 'Whatsapp-Clone' ? (
 						<span>
 							Click <a style={{
                                 textDecoration:'none',
@@ -52,7 +52,7 @@ class Project extends Component {
                                 outline:'none'
                             }} href="https://redsapp-d5e82.web.app/">here</a> to view the ptoject
 						</span>
-					) : null}
+					) : null} */}
 				</div>
 			</div>
 		);

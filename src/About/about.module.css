@@ -1,5 +1,5 @@
 .about{
-    background-color: #9B9FB5;
+    background-color: #212121;
     margin:2rem auto;
     display: grid;
     grid-template-columns: 20% minmax(min-content,50rem);
@@ -16,16 +16,17 @@
     width: 100%;
     border-radius: 50%;
     object-fit: cover;
-
+    position:relative;
+    z-index: 21;
+    border:1rem solid #212121;
 }
-
-
 
 .image{
     grid-column: 1/2;
     justify-self: flex-end;
     height: 25rem;
     width: 25rem;
+    position:relative;
 }
 
 .content{
@@ -44,34 +45,37 @@
     position: relative;
 }
 
-.content__header::before{
-    content: '';
-    position: absolute;
-    height: 38px;
-    border-bottom: 3px solid #4a4e69;
-    width: 120px;
-    border-radius: 2%;
-    left: 27%;
-    top: 10%;
-
-}
 
 .bio{
-    color:#22223b;
+    color:#ededed;
     line-height: 2.2rem;
     font-size: 1.5rem;
     margin-top: 2rem;
+    letter-spacing: 0.05rem;
 }
 
 .icon{
     height: 3rem;
-    fill:#22223B;
+    fill:#ededed;
     margin:0 1rem;
-    transition: fill 0.5s linear;
+    transform: translateY(0);
+    transition: fill 0.5s linear,
+                transform 0.4s ease-in-out;
+}
+.img_back{
+    height:25rem;
+    width:25rem;
+    z-index: 20;
+    left:-25%;
+    top:0;
+    background-color:#ededed;
+    border-radius: 50%;
+    position: absolute;
 }
 
 .icon:hover{
-    fill:#4a4e69
+    fill:#fff;
+    transform: translateY(-1rem);
 
 }
 
@@ -118,5 +122,8 @@
 
     .about{
         height:75rem;
+    }
+    .img_back{
+        left:-15%;
     }
 }
