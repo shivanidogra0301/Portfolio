@@ -57,6 +57,30 @@
     color:#fff;
 }
 
+.links{
+    display: flex;
+}
+.icon{
+    fill:#ffff;
+    height:1.6rem;
+    width:1.6rem;
+    margin-right:1rem;
+}
+
+.tech{
+    display: flex;
+    z-index: 10;
+    justify-content:space-between;
+    margin-top: 1rem;
+    align-items:center;
+}
+.tech_item{
+    margin-left:1.6rem;
+    font-weight:600;
+    font-size: 1.5rem;
+    color:#fff;
+}
+
 
 @media screen and (max-width:450px){
     .project__title{
