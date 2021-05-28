@@ -23,9 +23,9 @@ import caption1 from "./images/caption1.png"
 import caption2 from "./images/caption2.png"
 import caption3 from "./images/caption3.png"
 
-// import tonny1 from "./images/tonny1.PNG"
-// import tonny2 from "./images/tonny2.PNG"
-// import tonny3 from "./images/tonny3.PNG"
+import excel1 from "./images/excel1.PNG"
+import excel2 from "./images/excel2.PNG"
+import excel3 from "./images/excel3.PNG"
 
 import whatsApp1 from "./images/whatsapp1.png"
 import whatsApp2 from "./images/whatsapp2.png"
@@ -35,10 +35,19 @@ import whatsApp5 from "./images/whatsapp5.png"
 
 export default [
 	{
+		title: "Excel Clone",
+		image: excel1,
+		desc: 'It is a clone of Microsoft Excel.  Its supports all the major functionalities such as cut, copy, paste, alignment, color, text-decoration, formula, multiple sheets, and much more. Calculations are done using Stack and the cycles are detected using a Graph Data Structure.',
+		slides: [excel1, excel2, excel3],
+		tech:['HTML', 'CSS', 'JS'],
+		link: 'http://excel-clone.surge.sh',
+		github: ''
+	},
+	{
 		title:"Whatsapp-Clone",
 		image:whatsApp2,
 		desc:
-			'This project is the clone of whatsappweb which is made using react and redux for the frontend , nodejs for the backend. All the realtime communication is made using socket.io. The project is deployed on netlify. ',
+			'This project is the clone of WhatsApp web which is made using react and redux for the frontend, NodeJS for the backend. All the real-time communication such as typing indication, the message is seen or not is made using socket.io. The project is deployed on Netlify.',
 		slides:[whatsApp1 , whatsApp2 , whatsApp3 , whatsApp4 , whatsApp5],
 		tech:['React JS', 'Socket.io' , 'Express JS', 'Mongo DB'],
 		link:'https://whatsapp-clone-112.netlify.app',
@@ -48,7 +57,7 @@ export default [
 		title: 'Estore',
 		image: Img1,
 		desc:
-            'It is a fully functional E-commerce application.It uses Vue.JS in the frontend, and firebase cloud functions as the backend',
+            'It is a fully functional E-commerce application. It uses Vue.JS in the frontend, and Firebase cloud functions as the backend.',
 		slides:[ecommerce1,ecommerce2,ecommerce3,ecommerce4,ecommerce5],
 		tech:['Vue JS' , 'Firebase'],
 		github:'https://github.com/Shubham076/E-commerce',
@@ -59,7 +68,7 @@ export default [
 		title: 'Image based Search Engine',
 		image: Img2,
 		desc:
-            'It is an image based Search-Engine made using python,keras and tensorflow.It predicts the top 10 results with highest probabilities with the query image',
+            'It is an image-based Search-Engine made using python, Keras, and TensorFlow. It predicts the top 10 results with the highest probabilities with the query image.',
 		slides:[search1,search2,search3],
 		tech:['React JS', 'Flask', 'Keras'],
 		github:'https://github.com/ShubhamDogra112/Image-Based-search-Engine',
@@ -68,7 +77,7 @@ export default [
 	{
 		title: 'Redsapp',
 		image: Img3,
-		desc:	'It is a fully functional twitter clone made using ReactJs as the frontend and firebase cloud functions as the backend. You can like,comment,update ,delete tweets and receive real time notifications.User can also update his profile just like a typical social media platform ',
+		desc:	'It is a fully functional Twitter clone made using ReactJS as the frontend and firebase cloud functions as the backend. You can like, comment, update, delete tweets and receive real-time notifications. User can also update their profile just like a typical social media platform.',
 		slides:[redsapp1,redsapp4,redsapp2 ,redsapp3],
 		tech:['React JS' , 'Firebase'],
 		github:'https://github.com/ShubhamDogra112/Redsapp',
@@ -79,7 +88,7 @@ export default [
 		title: 'Caption-Bot',
 		image: Img4,
 		desc:
-			'It is made using python,keras ,tensorflow,glove vectors and transfer learning using Resnet50.It analyzes the image and predict the most appropriate caption using beam search.',
+			'It is made using python, Keras, TensorFlow, glove vectors, and transfer learning using Resnet50. It analyzes the image and predicts the most appropriate caption using beam search.',
 		slides:[caption1,caption2,caption3],
 		tech:['React JS', 'Flask', 'Keras'],
 		github:'https://github.com/Shubham076/CaptionBot',

@@ -30,7 +30,7 @@ const About = (props) => {
                 </div>
 
                 <div className={classes.bio}>
-                A second year undergraduate in Information Technology who has a keen interest in Web Design, Development, Data Structures and Data Science. Currently, I am improving my skillset and learning new technologies. I am a fitness enthusiast and in my spare time I also love to play video games .
+                A third-year undergraduate in Information Technology who has a keen interest in Web Design, Development, Data Structures, and Data Science. Currently, I am improving my skill set and learning new technologies. I am a fitness enthusiast and in my spare time, I also love to play video games.
                 </div>
 
                 <div data-aos="zoom-out-down" className={classes.icons}>
