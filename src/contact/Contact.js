@@ -24,7 +24,7 @@ export class Contact extends Component {
                         <span style={{color:"#ededed", fontWeight:"700"}}>  what you see?</span>
                     </div>
                     <div className={classes.message}>I'd love to hear from you</div>
-                    <a data-aos="fade-top" id="an" className={classes.btn} href='mailTo:shubhamdogra076@gmail.com'>Get In Touch
+                    <a data-aos="fade-top" id="an" className={classes.btn} href='mailTo:shivanidogra789@gmail.com'>Get In Touch
                     <span></span>
                     </a>
                 </div>

@@ -69,7 +69,7 @@ const Slider = () => {
         <div className={classes.slider}>
 
             {slides}
-            <div className={classes.title}>Shubham Dogra</div>
+            <div className={classes.title}>Shivani Dogra</div>
             <div className={classes.type} id="typed"/>
             <div className={classes.slide}>
             <div className={classes.dot}></div>
